@@ -1,0 +1,130 @@
+* {
+  margin: 0; /* Remove as margens padrao */
+  padding: 0; /* Remove o preenchimento padrao */
+  box-sizing: border-box; /* Faz com que a largura e altura sejam calculadas de acordo com o conteudo */
+  font-family: viaodra libre; /* Define a fonte padrao */
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/* HEADER SOBRE HERO */
+.header {
+  position: absolute; /* Posiciona o header de forma absoluta */
+  width: 100%; /* Ocupa 100% da largura da tela */
+  padding: 25px 80px; /* 25px para cima e 80px para os lados */
+  display: flex; /* Deixa os elementos um ao lado do outro */
+  justify-content: space-between; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente no centro */
+  z-index: 10; /* Para ficar por cima do hero */
+}
+
+.header h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 50px; /* Espaco entre os elementos */
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #a8b3b9;
+  text-transform: uppercase;
+}
+
+.header li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* HERO COM GRADIENTE IGUAL */
+.hero {
+  height: 520px;
+  background:
+    /*linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95)),*/ url("imagens/topo.jpg")
+    center top/cover no-repeat;
+}
+
+/* INTRO */
+.intro {
+  text-align: center;
+  padding: 90px 20px 60px;
+}
+
+.intro h2 {
+  font-size: 36px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.intro p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 15px;
+  color: #6b6b6b;
+  line-height: 1.7; /* Espacamento entre linhas */
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+.card img {
+  width: 270px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card {
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* SEÇÃO AZUL */
+.cta {
+  background: linear-gradient(135deg, #0b3a45, #0f5463);
+  padding: 110px 80px;
+}
+
+.cta h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 44px;
+  color: #e6edf0;
+  margin-bottom: 30px;
+}
+
+.cta p {
+  color: #c3d0d6;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #082c36;
+  color: #9fb3bb;
+  padding: 18px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
