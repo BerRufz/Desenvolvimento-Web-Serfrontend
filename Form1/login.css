@@ -1,0 +1,90 @@
+html {
+  background-color: #95a5a6;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex; /* Habilita o uso de flexbox */
+  flex-direction: column; /* Coloca os elementos um abaixo do outro */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  min-height: 100vh; /* Ocupa toda a altura da tela */
+  margin: 0;
+}
+
+form {
+  width: 350px;
+  padding: 1rem;
+  margin: 0 auto; /* Centraliza o formulário */
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #333;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input,
+label {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+input {
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  border: px solid #bbb;
+  font-size: 1rem;
+}
+
+legend {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: #454e4f;
+  font-size: 1.2rem;
+}
+
+.btn {
+  width: fit-content; /* Ocupa o tamanho do conteúdo */
+  margin-left: auto; /*Vai para a direita*/
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #27ae60;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 171, 0, 0.5);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+.btn2 {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: rgba(0, 171, 0, 0.5);
+}
+.btn--apagar {
+  background-color: #c0392b;
+}
+.btn--apagar:hover {
+  background-color: rgba(171, 0, 0, 0.5);
+}

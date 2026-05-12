@@ -1,0 +1,100 @@
+:root {
+  --login-primary-color: #3a68b7;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--login-primary-color);
+}
+
+.form {
+  width: 80%;
+  max-width: 32em;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3) 0.5em,
+    white 0.5em
+  );
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  padding: 2rem;
+}
+
+.form__title {
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--login-primary-color);
+  padding-top: 2rem;
+}
+
+.form__label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.form__input {
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--login-primary-color);
+  margin-bottom: 0.8rem;
+  outline: none;
+  transition: padding-left 0.08s linear;
+}
+
+.form__input:focus {
+  outline: 2px solid var(--login-primary-color);
+  padding-left: 0.3rem;
+}
+.btn {
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background-color: var(--login-primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  color: var(--login-primary-color);
+}
+
+.form__action {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form__action__aside {
+  font-size: 1rem;
+  flex-grow: 1; /* para ocupar todo o espaço disponível */
+  text-align: right;
+  text-decoration: none;
+  color: var(--login-primary-color);
+}
+
+.form__action__link {
+  text-decoration: inherit; /* herda a decoração do pai */
+  color: inherit; /* herda a cor do pai */
+}
