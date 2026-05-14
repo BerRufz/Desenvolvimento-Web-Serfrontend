@@ -15,6 +15,8 @@ Projetos de sites realizados durante as aulas do curso de desenvolvimento web do
 
 ### 🎥 Animação 1: https://berrufz.github.io/Desenvolvimento-Web-Serfrontend/Animation1
 ### 🎥 Animação 2 🔴 (NÃO RESPONSIVO): https://berrufz.github.io/Desenvolvimento-Web-Serfrontend/Animation2
+### 🎥 Animação 3: https://berrufz.github.io/Desenvolvimento-Web-Serfrontend/Animation3
+### 🎥 Animação 4: https://berrufz.github.io/Desenvolvimento-Web-Serfrontend/Animation4
 
 ### 💻 Layout 1: https://berrufz.github.io/Desenvolvimento-Web-Serfrontend/Layout1
 ### 💻 Layout 2: https://berrufz.github.io/Desenvolvimento-Web-Serfrontend/Layout2
