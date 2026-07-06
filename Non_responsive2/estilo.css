@@ -1,0 +1,118 @@
+body {
+  background-color: #0c1014;
+  color: white;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto; /* centraliza o conteudo */
+  font-family: "Inter", sans-serif;
+}
+
+.main-title {
+  font-size: 62px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 46px 0; /* 46 para vertical e 0 para horizontal */
+}
+
+.header {
+  display: flex; /* deixa os elementos um ao lado do outro */
+  background-color: #0c1014;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.header__logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-left: 16px;
+  letter-spacing: 2px;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+  gap: 16px;
+}
+
+.header__nav a {
+  color: white;
+  text-decoration: none; /* tira o sublinhado */
+  padding: 14px;
+  border-radius: 6px;
+}
+
+.header__nav--active {
+  background-color: #cbe300;
+  color: #0c1014;
+  pointer-events: none; /* desabilita o clique */
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
+
+.pricing {
+  display: flex;
+  gap: 16px;
+}
+
+.pricing-plan {
+  flex: 1; /* distribui o espaco, ficando todos do mesmo tamanho */
+  background-color: #111a1a;
+  padding: 16px;
+  border-radius: 6px;
+  /*box-shadow: 0 5px 12px red;*/
+  box-shadow: 0 5px 12px black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.pricing-plan__title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #cbe300;
+  margin-top: 0;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.pricing-plan p {
+  margin-top: 0;
+}
+
+.pricing-plan__price {
+  font-size: 34px;
+}
+
+.pricing-plan__features {
+  margin: 0 0 35px;
+  color: #b5b5b5;
+  padding-left: 16px;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.pricing-plan__cta {
+  text-decoration: none;
+  color: #0c1014;
+  background-color: #cbe300;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 10px; /* 16 para vertical e 10 para horizontal */
+  text-align: center;
+}
+
+.pricing-plan__features li::marker {
+  color: #cbe300; /* altera a cor do marcador */
+}
+
+.pricing-plan__cta:hover {
+  outline: 2px solid #cbe300; /* adiciona uma borda ao passar o mouse */
+  background-color: transparent;
+  color: white;
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Components</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css " />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#">
+          <img src="imagens/perfil.png" alt="Fulano" class="perfil-img" />
+        </a>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tipografia.html">Tipografia</a></li>
+          <li><a href="cards.html">Cards</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="formulario.html">Formulário</a></li>
+          <li><a href="botoes.html">Botões</a></li>
+          <li><a href="tabelas.html">Tabelas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1>My Components</h1>
+
+      <article class="highlight">
+        <h2>Tipografia</h2>
+
+        <p>
+          A tipografia transmite nossas definições de tamanhos e espaçamento e
+          deve ser utilizada respeitando a hierarquia dos elementos na
+          interface.
+        </p>
+      </article>
+
+      <section>
+        <h3>Elementos</h3>
+
+        <article>
+          <h4>Textos</h4>
+
+          <p>
+            Esse texto está escrito em <b>negrito</b>, e esse, um texto
+            <strong>forte</strong>.
+          </p>
+          <p>Esse texto está em <i>itálico</i>, e este, com <em>ênfase</em>.</p>
+          <p>
+            Isto é um texto escrito de forma <u class="underline">erada</u>, e
+            isso, um <a href="#">link</a>.
+          </p>
+        </article>
+
+        <article>
+          <h4>Sobreescrito e subscrito</h4>
+          <p>3<sup>2</sup> é igual a 9.</p>
+          <p>A fórmula da água é H<sub>2</sub>O.</p>
+        </article>
+
+        <article>
+          <h4>Abreviações</h4>
+          <p>
+            Para criar páginas na web, precisamos aprender sobre
+            <abbr title="HipperText Markup Language">HTML</abbr>
+          </p>
+          <p>
+            Para criar páginas na web, precisamos aprender sobre
+            <a href="#html-dfn"></a>
+            <abbr title="HipperText Markup Language">HTML</abbr>
+          </p>
+          <p>
+            O<dfn id="#html-dfn"
+              ><abbr title="HipperText Markup Language">HTML</abbr></dfn
+            >
+            é a principal linguagem da web onde podemos incluir nosso conteúdo
+            de forma semântica.
+          </p>
+        </article>
+
+        <article>
+          <h4>Citações</h4>
+          <blockquote>
+            <p>O ruim não é ter trabalho, o ruim é ter de trabalhar.</p>
+            <cite>Seu Madruga</cite>
+          </blockquote>
+
+          <blockquote>
+            o Elemento HTML &lt;blockoquote&gt; (ou Elemento HTML de citação de
+            bloco) indica que o texto incluído é uma longa citação.
+            <cite>MDN</cite>
+          </blockquote>
+
+          <p>
+            Segundo o Seu Madruga
+            <q>A vingança nunca é plena, mata a alma e envenena.</q>
+          </p>
+
+          <p>O filme <cite>Sing</cite>contém várias músicas boas.</p>
+        </article>
+
+        <article>
+          <h4>Coisas de computador</h4>
+
+          <p>
+            A propriedade background do CSS serve para colocar uma imagem de
+            fundo.
+          </p>
+
+          <pre>Este texto é pré-formatado.</pre>
+
+          <pre>
+            <code>
+article{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+            </code>
+          </pre>
+          <p>
+            Após executar o método <code>push()</code> obtive
+            <samp lang="en-us">Undefined has not a push() function</samp>
+          </p>
+        </article>
+
+        <article>
+          <h4>Datas e horários</h4>
+
+          <p>
+            O evento ocorrerá em
+            <time datetime="2026-05-01">1° de maio de 2026</time>.
+          </p>
+          <p>
+            O evento ocorrerá em <time datetime="2026-05-01">01/05/2026</time>.
+          </p>
+          <p>
+            o evento ocorrerá às
+            <time datetime="2026-05-01T21:00:00"></time>21h00 do dia 1° de maio
+            de 2026.
+          </p>
+          <p>
+            o evento ocorrerá às
+            <time datetime="2026-05-01T21:00:00-03:00"></time>21h00 do dia 1° de
+            maio de 2026.
+          </p>
+          <h5 lang="en-us">JS Conference</h5>
+          <p>
+            O evento iniciará exatamente às <time datetime="21:00">21h00.</time>
+          </p>
+          <p>
+            O evento ocorrerá às 20h00 do dia
+            <del datetime="2026-05-01">1° de maio de 2026</del>
+            <ins
+              ><time datetime="2026-05-01T21:00:00-03:00"
+                >21h00 do dia 1° de maio de 2026.</time
+              ></ins
+            >.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
