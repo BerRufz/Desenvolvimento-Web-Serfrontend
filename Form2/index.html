@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="contato.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Formulário de contato</legend>
+
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          autocomplete="off"
+          autofocus
+          placeholder="Digite seu nome completo"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="meuemail@gmail.com"
+        />
+
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" placeholder="Assunto" />
+
+        <label for="message">Mensagem:</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="7"
+          required
+          minlength="20"
+          maxlength="1000"
+          placeholder="Conte-nos sua opinião"
+        ></textarea>
+
+        <button type="submit" class="btn" />Enviar
+      </fieldset>
+    </form>
+  </body>
+</html>

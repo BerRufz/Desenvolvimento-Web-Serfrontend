@@ -1,0 +1,123 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(ellipse at 0 0, #fff8ce, #ffd61d);
+  overflow-y: hidden;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 83.75em;
+  margin: auto;
+}
+
+header {
+  padding: 2.5em 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1 span {
+  text-transform: uppercase;
+  color: brown;
+}
+
+main {
+  display: flex;
+  gap: 2em;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+main > * {
+  flex: 1 0 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+form {
+  display: flex;
+  gap: 1em;
+}
+
+form input {
+  padding: 1em;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #28293e;
+  outline: none;
+}
+
+form input[type="submit"] {
+  background-color: #031d44;
+  color: white;
+}
+
+form input[type="text"] {
+  background-color: transparent;
+}
+
+form input[type="text"]::placeholder {
+  color: #28293e;
+}
+
+.animation {
+  position: relative;
+}
+
+.animation img {
+  position: absolute;
+}
+
+.animation img:nth-child(1) {
+  left: -80px;
+  top: 70px;
+  animation: top-left 2s infinite alternate;
+}
+
+.animation img:nth-child(2) {
+  right: -10px;
+  top: -70px;
+  animation: top-left 3s 0.5s infinite alternate;
+}
+
+.animation img:nth-child(3) {
+  right: 0;
+  top: -90px;
+  animation: top-left 3.5s 0.5s infinite alternate;
+}
+
+.animation img:nth-child(4) {
+  left: 20px;
+  bottom: -130px;
+  animation: top-left 4s 0.5s infinite alternate;
+}
+
+.animation img:nth-child(5) {
+  left: -30px;
+  top: -130px;
+  z-index: -1;
+  animation: top-left 3s infinite alternate;
+}
+
+.animation img:nth-child(6) {
+  right: 10px;
+  bottom: -100px;
+  animation: top-left 4s infinite alternate;
+}
+
+@keyframes top-left {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-10px, -30px);
+  }
+}

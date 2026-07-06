@@ -1,0 +1,184 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(#3f5efb, #aa46fb);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+main {
+  background-color: white;
+  width: 38.75em;
+  padding: 2em;
+  box-sizing: border-box;
+  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.6);
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 5em);
+  gap: 1em;
+  perspective: 31.5em;
+}
+
+.card {
+  position: relative;
+  border: 2px solid red;
+  border-radius: 0.5em;
+  transform-style: preserve-3d; /* Permite a rotação em 3D */
+  transition: transform 0.4s;
+  box-shadow: 0 5px 7px -5px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites da caixa */
+  object-fit: cover; /* Garante que a imagem preencha a caixa sem distorção */
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5em;
+  backface-visibility: hidden; /* Esconde a face traseira quando a frente estiver visível */
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+main:has(#check1:checked) .game .card1 {
+  transform: rotateY(180deg);
+}
+main:has(#check2:checked) .game .card2 {
+  transform: rotateY(180deg);
+}
+main:has(#check3:checked) .game .card3 {
+  transform: rotateY(180deg);
+}
+main:has(#check4:checked) .game .card4 {
+  transform: rotateY(180deg);
+}
+main:has(#check5:checked) .game .card5 {
+  transform: rotateY(180deg);
+}
+main:has(#check6:checked) .game .card6 {
+  transform: rotateY(180deg);
+}
+main:has(#check7:checked) .game .card7 {
+  transform: rotateY(180deg);
+}
+main:has(#check8:checked) .game .card8 {
+  transform: rotateY(180deg);
+}
+main:has(#check9:checked) .game .card9 {
+  transform: rotateY(180deg);
+}
+main:has(#check10:checked) .game .card10 {
+  transform: rotateY(180deg);
+}
+main:has(#check11:checked) .game .card11 {
+  transform: rotateY(180deg);
+}
+main:has(#check12:checked) .game .card12 {
+  transform: rotateY(180deg);
+}
+main:has(#check13:checked) .game .card13 {
+  transform: rotateY(180deg);
+}
+main:has(#check14:checked) .game .card14 {
+  transform: rotateY(180deg);
+}
+main:has(#check15:checked) .game .card15 {
+  transform: rotateY(180deg);
+}
+main:has(#check16:checked) .game .card16 {
+  transform: rotateY(180deg);
+}
+
+main:has(#check1:focus) .game .card1 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check2:focus) .game .card2 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check3:focus) .game .card3 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check4:focus) .game .card4 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check5:focus) .game .card5 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check6:focus) .game .card6 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check7:focus) .game .card7 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check8:focus) .game .card8 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check9:focus) .game .card9 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check10:focus) .game .card10 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check11:focus) .game .card11 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check12:focus) .game .card12 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check13:focus) .game .card13 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check14:focus) .game .card14 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check15:focus) .game .card15 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+main:has(#check16:focus) .game .card16 {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
+.controls {
+  /*display: none; MATA A ACESSIBILIDADE DO JOGO*/
+  position: absolute;
+  clip: rect(
+    1px,
+    1px,
+    1px,
+    1px
+  ); /* Esconde visualmente, mas mantém acessível para leitores de tela */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
